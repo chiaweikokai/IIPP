@@ -98,8 +98,8 @@ def draw(canvas):
         ball_vel[1] = -ball_vel[1]
 
     # draw scores
-    canvas.draw_text(str(score1), [100, 40], 32, 'Green')
-    canvas.draw_text(str(score2), [350, 40], 32, 'Blue')
+    canvas.draw_text(str(score1), [246, 40], 32, 'Green')
+    canvas.draw_text(str(score2), [332, 40], 32, 'Blue')
 
 
 def keydown(key):
@@ -125,7 +125,7 @@ frame = simplegui.create_frame("Pong", WIDTH, HEIGHT)
 frame.set_draw_handler(draw)
 frame.set_keydown_handler(keydown)
 frame.set_keyup_handler(keyup)
-frame.add_button("Reset Game", new_game, 100)
+frame.add_button("Restart Game", new_game, 100)
 
 
 # start frame
